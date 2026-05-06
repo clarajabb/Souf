@@ -30,7 +30,7 @@ jobs:
         working-directory: frontend
 
       - name: Build
-        run: npm run build
+        run: npm run build -- --base=/Souf/
         working-directory: frontend
 
       - uses: actions/upload-pages-artifact@v3
