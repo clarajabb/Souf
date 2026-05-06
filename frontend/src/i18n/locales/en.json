@@ -1,0 +1,181 @@
+{
+  "nav": {
+    "home": "Home",
+    "browse": "Browse Materials",
+    "howItWorks": "How It Works",
+    "login": "Log in",
+    "register": "Get Started",
+    "dashboard": "Dashboard",
+    "messages": "Messages",
+    "logout": "Log out"
+  },
+  "home": {
+    "hero": {
+      "title": "Source Raw Materials Directly from the Farm",
+      "subtitle": "Connect with verified suppliers of wool, alpaca, linen, silk and more — with traceable origins and escrow payments.",
+      "cta": "Browse Materials",
+      "supplierCta": "List Your Fibre"
+    },
+    "howItWorks": {
+      "title": "How SOUF Works",
+      "step1Title": "List Your Material",
+      "step1Desc": "Suppliers create detailed listings with photos, certifications, and pricing.",
+      "step2Title": "Discover & Sample",
+      "step2Desc": "Buyers browse and filter listings, request samples before committing.",
+      "step3Title": "Order with Confidence",
+      "step3Desc": "Pay securely via escrow — funds release only when you confirm delivery."
+    },
+    "trust": {
+      "verified": "Verified Suppliers",
+      "verifiedDesc": "Every supplier is manually reviewed and badge-certified.",
+      "escrow": "Escrow Payments",
+      "escrowDesc": "Your payment is held safely until you confirm receipt.",
+      "traceable": "Full Traceability",
+      "traceableDesc": "Know exactly where your fibre comes from — farm to label."
+    },
+    "featured": "Featured Listings"
+  },
+  "listings": {
+    "title": "Browse Raw Materials",
+    "filters": "Filters",
+    "material": "Material Type",
+    "country": "Country",
+    "priceRange": "Price per kg",
+    "minPrice": "Min $",
+    "maxPrice": "Max $",
+    "samplesOnly": "Samples available",
+    "minQuantity": "Min quantity (kg)",
+    "applyFilters": "Apply",
+    "clearFilters": "Clear",
+    "noResults": "No listings match your filters.",
+    "perKg": "/ kg",
+    "moq": "MOQ",
+    "available": "available",
+    "sampleAvailable": "Sample available",
+    "viewListing": "View listing",
+    "loading": "Loading listings..."
+  },
+  "listing": {
+    "pricePerKg": "Price / kg",
+    "moq": "Minimum Order",
+    "available": "Available",
+    "samplePrice": "Sample price",
+    "requestSample": "Request Sample",
+    "placeOrder": "Place Order",
+    "quantity": "Quantity (kg)",
+    "total": "Total",
+    "pay": "Pay Now",
+    "allowsSamples": "Samples available",
+    "noSamples": "Samples not available",
+    "description": "Description",
+    "specifications": "Specifications",
+    "reviews": "Reviews",
+    "noReviews": "No reviews yet."
+  },
+  "source": {
+    "title": "Source Card",
+    "member": "Member since",
+    "orders": "Completed orders",
+    "rating": "Rating",
+    "practice": "Farming practice",
+    "certifications": "Certifications",
+    "viewProfile": "View full profile"
+  },
+  "auth": {
+    "registerTitle": "Create your account",
+    "loginTitle": "Welcome back",
+    "email": "Email",
+    "password": "Password",
+    "name": "Full name",
+    "role": "I am a...",
+    "supplier": "Supplier",
+    "buyer": "Buyer",
+    "country": "Country",
+    "phone": "Phone (optional)",
+    "farmName": "Farm / operation name",
+    "location": "Location",
+    "farmingPractice": "Farming practice",
+    "registerBtn": "Create account",
+    "loginBtn": "Log in",
+    "haveAccount": "Already have an account?",
+    "noAccount": "Don't have an account?",
+    "organic": "Organic",
+    "conventional": "Conventional",
+    "freeRange": "Free-range"
+  },
+  "dashboard": {
+    "supplier": {
+      "title": "Supplier Dashboard",
+      "myListings": "My Listings",
+      "newListing": "New Listing",
+      "incomingOrders": "Incoming Orders",
+      "sampleRequests": "Sample Requests",
+      "earnings": "Earnings",
+      "totalPaid": "Total Paid Out",
+      "pending": "Pending"
+    },
+    "buyer": {
+      "title": "Buyer Dashboard",
+      "myOrders": "My Orders",
+      "mySamples": "Sample Requests",
+      "messages": "Messages"
+    }
+  },
+  "order": {
+    "statusTimeline": "Order Status",
+    "paid": "Paid",
+    "shipped": "Shipped",
+    "delivered": "Delivered",
+    "confirmDelivery": "Confirm Delivery",
+    "leaveReview": "Leave Review",
+    "markShipped": "Mark as Shipped",
+    "details": "Order Details",
+    "quantity": "Quantity",
+    "total": "Total",
+    "created": "Created",
+    "status": "Status"
+  },
+  "messages": {
+    "title": "Messages",
+    "typeMessage": "Type a message...",
+    "send": "Send",
+    "noConversations": "No conversations yet.",
+    "selectConversation": "Select a conversation"
+  },
+  "review": {
+    "title": "Leave a Review",
+    "rating": "Rating",
+    "comment": "Comment (optional)",
+    "submit": "Submit Review",
+    "success": "Review submitted!"
+  },
+  "sample": {
+    "requestTitle": "Request a Sample",
+    "price": "Sample price",
+    "confirm": "Confirm Request",
+    "success": "Sample requested!"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong.",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "kg": "kg",
+    "usd": "USD",
+    "verified": "Verified",
+    "all": "All"
+  },
+  "materials": {
+    "WOOL": "Wool",
+    "COTTON": "Cotton",
+    "LINEN": "Linen",
+    "SILK": "Silk",
+    "LEATHER": "Leather",
+    "CASHMERE": "Cashmere",
+    "ALPACA": "Alpaca",
+    "OTHER": "Other"
+  }
+}

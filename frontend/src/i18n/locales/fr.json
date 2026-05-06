@@ -1,0 +1,181 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "browse": "Explorer les matières",
+    "howItWorks": "Comment ça marche",
+    "login": "Connexion",
+    "register": "Commencer",
+    "dashboard": "Tableau de bord",
+    "messages": "Messages",
+    "logout": "Déconnexion"
+  },
+  "home": {
+    "hero": {
+      "title": "Sourcez vos matières premières directement à la ferme",
+      "subtitle": "Connectez-vous avec des fournisseurs vérifiés de laine, alpaga, lin, soie et plus — avec traçabilité complète et paiements sécurisés.",
+      "cta": "Explorer les matières",
+      "supplierCta": "Référencer ma fibre"
+    },
+    "howItWorks": {
+      "title": "Comment fonctionne SOUF",
+      "step1Title": "Référencez votre matière",
+      "step1Desc": "Les fournisseurs créent des annonces détaillées avec photos, certifications et tarifs.",
+      "step2Title": "Découvrez et échantillonnez",
+      "step2Desc": "Les acheteurs parcourent et filtrent les annonces, et peuvent demander des échantillons.",
+      "step3Title": "Commandez en toute confiance",
+      "step3Desc": "Payez en séquestre — les fonds ne sont libérés qu'à la confirmation de livraison."
+    },
+    "trust": {
+      "verified": "Fournisseurs vérifiés",
+      "verifiedDesc": "Chaque fournisseur est examiné manuellement et certifié.",
+      "escrow": "Paiements en séquestre",
+      "escrowDesc": "Votre paiement est sécurisé jusqu'à confirmation de réception.",
+      "traceable": "Traçabilité complète",
+      "traceableDesc": "Sachez exactement d'où vient votre fibre — de la ferme à l'étiquette."
+    },
+    "featured": "Annonces à la une"
+  },
+  "listings": {
+    "title": "Explorer les matières premières",
+    "filters": "Filtres",
+    "material": "Type de matière",
+    "country": "Pays",
+    "priceRange": "Prix au kg",
+    "minPrice": "Min $",
+    "maxPrice": "Max $",
+    "samplesOnly": "Échantillons disponibles",
+    "minQuantity": "Quantité min (kg)",
+    "applyFilters": "Appliquer",
+    "clearFilters": "Effacer",
+    "noResults": "Aucune annonce ne correspond à vos filtres.",
+    "perKg": "/ kg",
+    "moq": "CMQ",
+    "available": "disponible",
+    "sampleAvailable": "Échantillon disponible",
+    "viewListing": "Voir l'annonce",
+    "loading": "Chargement..."
+  },
+  "listing": {
+    "pricePerKg": "Prix / kg",
+    "moq": "Commande minimum",
+    "available": "Disponible",
+    "samplePrice": "Prix échantillon",
+    "requestSample": "Demander un échantillon",
+    "placeOrder": "Passer commande",
+    "quantity": "Quantité (kg)",
+    "total": "Total",
+    "pay": "Payer maintenant",
+    "allowsSamples": "Échantillons disponibles",
+    "noSamples": "Pas d'échantillons",
+    "description": "Description",
+    "specifications": "Spécifications",
+    "reviews": "Avis",
+    "noReviews": "Aucun avis pour l'instant."
+  },
+  "source": {
+    "title": "Carte source",
+    "member": "Membre depuis",
+    "orders": "Commandes complétées",
+    "rating": "Note",
+    "practice": "Pratique agricole",
+    "certifications": "Certifications",
+    "viewProfile": "Voir le profil complet"
+  },
+  "auth": {
+    "registerTitle": "Créer votre compte",
+    "loginTitle": "Bon retour",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "name": "Nom complet",
+    "role": "Je suis...",
+    "supplier": "Fournisseur",
+    "buyer": "Acheteur",
+    "country": "Pays",
+    "phone": "Téléphone (optionnel)",
+    "farmName": "Nom de la ferme / exploitation",
+    "location": "Localisation",
+    "farmingPractice": "Pratique agricole",
+    "registerBtn": "Créer le compte",
+    "loginBtn": "Se connecter",
+    "haveAccount": "Vous avez déjà un compte ?",
+    "noAccount": "Pas encore de compte ?",
+    "organic": "Biologique",
+    "conventional": "Conventionnel",
+    "freeRange": "Élevage extensif"
+  },
+  "dashboard": {
+    "supplier": {
+      "title": "Tableau de bord fournisseur",
+      "myListings": "Mes annonces",
+      "newListing": "Nouvelle annonce",
+      "incomingOrders": "Commandes reçues",
+      "sampleRequests": "Demandes d'échantillons",
+      "earnings": "Revenus",
+      "totalPaid": "Total encaissé",
+      "pending": "En attente"
+    },
+    "buyer": {
+      "title": "Tableau de bord acheteur",
+      "myOrders": "Mes commandes",
+      "mySamples": "Échantillons",
+      "messages": "Messages"
+    }
+  },
+  "order": {
+    "statusTimeline": "Statut de la commande",
+    "paid": "Payé",
+    "shipped": "Expédié",
+    "delivered": "Livré",
+    "confirmDelivery": "Confirmer la livraison",
+    "leaveReview": "Laisser un avis",
+    "markShipped": "Marquer comme expédié",
+    "details": "Détails de la commande",
+    "quantity": "Quantité",
+    "total": "Total",
+    "created": "Créé le",
+    "status": "Statut"
+  },
+  "messages": {
+    "title": "Messages",
+    "typeMessage": "Écrire un message...",
+    "send": "Envoyer",
+    "noConversations": "Aucune conversation.",
+    "selectConversation": "Sélectionnez une conversation"
+  },
+  "review": {
+    "title": "Laisser un avis",
+    "rating": "Note",
+    "comment": "Commentaire (optionnel)",
+    "submit": "Soumettre l'avis",
+    "success": "Avis soumis !"
+  },
+  "sample": {
+    "requestTitle": "Demander un échantillon",
+    "price": "Prix de l'échantillon",
+    "confirm": "Confirmer la demande",
+    "success": "Échantillon demandé !"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue.",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "back": "Retour",
+    "kg": "kg",
+    "usd": "USD",
+    "verified": "Vérifié",
+    "all": "Tous"
+  },
+  "materials": {
+    "WOOL": "Laine",
+    "COTTON": "Coton",
+    "LINEN": "Lin",
+    "SILK": "Soie",
+    "LEATHER": "Cuir",
+    "CASHMERE": "Cachemire",
+    "ALPACA": "Alpaga",
+    "OTHER": "Autre"
+  }
+}

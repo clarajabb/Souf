@@ -1,0 +1,181 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "browse": "تصفح المواد",
+    "howItWorks": "كيف يعمل",
+    "login": "تسجيل الدخول",
+    "register": "ابدأ الآن",
+    "dashboard": "لوحة التحكم",
+    "messages": "الرسائل",
+    "logout": "تسجيل الخروج"
+  },
+  "home": {
+    "hero": {
+      "title": "تعامل مباشرة مع مصادر المواد الخام من المزرعة",
+      "subtitle": "تواصل مع موردين موثوقين للصوف والألباكا والكتان والحرير والمزيد — مع تتبع كامل للمصدر ومدفوعات آمنة.",
+      "cta": "تصفح المواد",
+      "supplierCta": "أدرج منتجك"
+    },
+    "howItWorks": {
+      "title": "كيف يعمل SOUF",
+      "step1Title": "أدرج مادتك",
+      "step1Desc": "يُنشئ الموردون قوائم تفصيلية مع صور وشهادات وأسعار.",
+      "step2Title": "اكتشف وطلب عينات",
+      "step2Desc": "يتصفح المشترون القوائم ويطلبون عينات قبل الالتزام.",
+      "step3Title": "اطلب بثقة",
+      "step3Desc": "ادفع بأمان عبر الضمان — يُفرج عن الأموال عند تأكيد الاستلام فقط."
+    },
+    "trust": {
+      "verified": "موردون موثوقون",
+      "verifiedDesc": "كل مورد تتم مراجعته يدوياً ويحمل شارة التحقق.",
+      "escrow": "مدفوعات بالضمان",
+      "escrowDesc": "يُحتفظ بمدفوعاتك بأمان حتى تأكيد الاستلام.",
+      "traceable": "تتبع كامل",
+      "traceableDesc": "اعرف بالضبط من أين تأتي ألياف نسيجك — من المزرعة إلى العلامة."
+    },
+    "featured": "قوائم مميزة"
+  },
+  "listings": {
+    "title": "تصفح المواد الخام",
+    "filters": "فلاتر",
+    "material": "نوع المادة",
+    "country": "الدولة",
+    "priceRange": "السعر لكل كجم",
+    "minPrice": "أدنى $",
+    "maxPrice": "أقصى $",
+    "samplesOnly": "عينات متاحة",
+    "minQuantity": "أدنى كمية (كجم)",
+    "applyFilters": "تطبيق",
+    "clearFilters": "مسح",
+    "noResults": "لا توجد قوائم تطابق فلاترك.",
+    "perKg": "/ كجم",
+    "moq": "الحد الأدنى للطلب",
+    "available": "متاح",
+    "sampleAvailable": "عينة متاحة",
+    "viewListing": "عرض القائمة",
+    "loading": "جارٍ التحميل..."
+  },
+  "listing": {
+    "pricePerKg": "السعر / كجم",
+    "moq": "الحد الأدنى للطلب",
+    "available": "متاح",
+    "samplePrice": "سعر العينة",
+    "requestSample": "طلب عينة",
+    "placeOrder": "تقديم الطلب",
+    "quantity": "الكمية (كجم)",
+    "total": "الإجمالي",
+    "pay": "ادفع الآن",
+    "allowsSamples": "عينات متاحة",
+    "noSamples": "لا عينات متاحة",
+    "description": "الوصف",
+    "specifications": "المواصفات",
+    "reviews": "التقييمات",
+    "noReviews": "لا توجد تقييمات بعد."
+  },
+  "source": {
+    "title": "بطاقة المصدر",
+    "member": "عضو منذ",
+    "orders": "الطلبات المكتملة",
+    "rating": "التقييم",
+    "practice": "الممارسة الزراعية",
+    "certifications": "الشهادات",
+    "viewProfile": "عرض الملف الكامل"
+  },
+  "auth": {
+    "registerTitle": "إنشاء حسابك",
+    "loginTitle": "مرحباً بعودتك",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "name": "الاسم الكامل",
+    "role": "أنا...",
+    "supplier": "مورد",
+    "buyer": "مشتري",
+    "country": "الدولة",
+    "phone": "الهاتف (اختياري)",
+    "farmName": "اسم المزرعة / المنشأة",
+    "location": "الموقع",
+    "farmingPractice": "الممارسة الزراعية",
+    "registerBtn": "إنشاء الحساب",
+    "loginBtn": "تسجيل الدخول",
+    "haveAccount": "لديك حساب بالفعل؟",
+    "noAccount": "ليس لديك حساب؟",
+    "organic": "عضوي",
+    "conventional": "تقليدي",
+    "freeRange": "رعي حر"
+  },
+  "dashboard": {
+    "supplier": {
+      "title": "لوحة تحكم المورد",
+      "myListings": "قوائمي",
+      "newListing": "قائمة جديدة",
+      "incomingOrders": "الطلبات الواردة",
+      "sampleRequests": "طلبات العينات",
+      "earnings": "الأرباح",
+      "totalPaid": "إجمالي المدفوع",
+      "pending": "قيد الانتظار"
+    },
+    "buyer": {
+      "title": "لوحة تحكم المشتري",
+      "myOrders": "طلباتي",
+      "mySamples": "طلبات العينات",
+      "messages": "الرسائل"
+    }
+  },
+  "order": {
+    "statusTimeline": "حالة الطلب",
+    "paid": "مدفوع",
+    "shipped": "تم الشحن",
+    "delivered": "تم التسليم",
+    "confirmDelivery": "تأكيد الاستلام",
+    "leaveReview": "كتابة تقييم",
+    "markShipped": "تحديد كمشحون",
+    "details": "تفاصيل الطلب",
+    "quantity": "الكمية",
+    "total": "الإجمالي",
+    "created": "أُنشئ في",
+    "status": "الحالة"
+  },
+  "messages": {
+    "title": "الرسائل",
+    "typeMessage": "اكتب رسالة...",
+    "send": "إرسال",
+    "noConversations": "لا توجد محادثات.",
+    "selectConversation": "اختر محادثة"
+  },
+  "review": {
+    "title": "كتابة تقييم",
+    "rating": "التقييم",
+    "comment": "تعليق (اختياري)",
+    "submit": "إرسال التقييم",
+    "success": "تم إرسال التقييم!"
+  },
+  "sample": {
+    "requestTitle": "طلب عينة",
+    "price": "سعر العينة",
+    "confirm": "تأكيد الطلب",
+    "success": "تم طلب العينة!"
+  },
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "error": "حدث خطأ ما.",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "back": "رجوع",
+    "kg": "كجم",
+    "usd": "دولار",
+    "verified": "موثق",
+    "all": "الكل"
+  },
+  "materials": {
+    "WOOL": "صوف",
+    "COTTON": "قطن",
+    "LINEN": "كتان",
+    "SILK": "حرير",
+    "LEATHER": "جلد",
+    "CASHMERE": "كشمير",
+    "ALPACA": "ألباكا",
+    "OTHER": "أخرى"
+  }
+}

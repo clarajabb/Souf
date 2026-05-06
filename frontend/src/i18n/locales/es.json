@@ -1,0 +1,181 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "browse": "Explorar materiales",
+    "howItWorks": "Cómo funciona",
+    "login": "Iniciar sesión",
+    "register": "Comenzar",
+    "dashboard": "Panel",
+    "messages": "Mensajes",
+    "logout": "Cerrar sesión"
+  },
+  "home": {
+    "hero": {
+      "title": "Abastécete directamente de la granja",
+      "subtitle": "Conéctate con proveedores verificados de lana, alpaca, lino, seda y más — con trazabilidad completa y pagos en garantía.",
+      "cta": "Explorar materiales",
+      "supplierCta": "Publicar mi fibra"
+    },
+    "howItWorks": {
+      "title": "Cómo funciona SOUF",
+      "step1Title": "Publica tu material",
+      "step1Desc": "Los proveedores crean anuncios detallados con fotos, certificaciones y precios.",
+      "step2Title": "Descubre y muestrea",
+      "step2Desc": "Los compradores navegan y filtran anuncios, y solicitan muestras antes de comprometerse.",
+      "step3Title": "Pide con confianza",
+      "step3Desc": "Paga de forma segura mediante garantía — los fondos se liberan solo al confirmar la entrega."
+    },
+    "trust": {
+      "verified": "Proveedores verificados",
+      "verifiedDesc": "Cada proveedor es revisado manualmente y certificado con insignia.",
+      "escrow": "Pagos en garantía",
+      "escrowDesc": "Tu pago se guarda de forma segura hasta confirmar la recepción.",
+      "traceable": "Trazabilidad completa",
+      "traceableDesc": "Sabe exactamente de dónde viene tu fibra — de la granja a la etiqueta."
+    },
+    "featured": "Anuncios destacados"
+  },
+  "listings": {
+    "title": "Explorar materias primas",
+    "filters": "Filtros",
+    "material": "Tipo de material",
+    "country": "País",
+    "priceRange": "Precio por kg",
+    "minPrice": "Mín $",
+    "maxPrice": "Máx $",
+    "samplesOnly": "Con muestras disponibles",
+    "minQuantity": "Cantidad mínima (kg)",
+    "applyFilters": "Aplicar",
+    "clearFilters": "Limpiar",
+    "noResults": "Ningún anuncio coincide con tus filtros.",
+    "perKg": "/ kg",
+    "moq": "Pedido mín.",
+    "available": "disponible",
+    "sampleAvailable": "Muestra disponible",
+    "viewListing": "Ver anuncio",
+    "loading": "Cargando anuncios..."
+  },
+  "listing": {
+    "pricePerKg": "Precio / kg",
+    "moq": "Pedido mínimo",
+    "available": "Disponible",
+    "samplePrice": "Precio muestra",
+    "requestSample": "Solicitar muestra",
+    "placeOrder": "Hacer pedido",
+    "quantity": "Cantidad (kg)",
+    "total": "Total",
+    "pay": "Pagar ahora",
+    "allowsSamples": "Muestras disponibles",
+    "noSamples": "Sin muestras",
+    "description": "Descripción",
+    "specifications": "Especificaciones",
+    "reviews": "Reseñas",
+    "noReviews": "Aún no hay reseñas."
+  },
+  "source": {
+    "title": "Tarjeta de origen",
+    "member": "Miembro desde",
+    "orders": "Pedidos completados",
+    "rating": "Valoración",
+    "practice": "Práctica agrícola",
+    "certifications": "Certificaciones",
+    "viewProfile": "Ver perfil completo"
+  },
+  "auth": {
+    "registerTitle": "Crea tu cuenta",
+    "loginTitle": "Bienvenido de nuevo",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "name": "Nombre completo",
+    "role": "Soy...",
+    "supplier": "Proveedor",
+    "buyer": "Comprador",
+    "country": "País",
+    "phone": "Teléfono (opcional)",
+    "farmName": "Nombre de la granja / explotación",
+    "location": "Ubicación",
+    "farmingPractice": "Práctica agrícola",
+    "registerBtn": "Crear cuenta",
+    "loginBtn": "Iniciar sesión",
+    "haveAccount": "¿Ya tienes una cuenta?",
+    "noAccount": "¿No tienes una cuenta?",
+    "organic": "Ecológico",
+    "conventional": "Convencional",
+    "freeRange": "Pastoreo extensivo"
+  },
+  "dashboard": {
+    "supplier": {
+      "title": "Panel de proveedor",
+      "myListings": "Mis anuncios",
+      "newListing": "Nuevo anuncio",
+      "incomingOrders": "Pedidos entrantes",
+      "sampleRequests": "Solicitudes de muestra",
+      "earnings": "Ingresos",
+      "totalPaid": "Total cobrado",
+      "pending": "Pendiente"
+    },
+    "buyer": {
+      "title": "Panel de comprador",
+      "myOrders": "Mis pedidos",
+      "mySamples": "Muestras",
+      "messages": "Mensajes"
+    }
+  },
+  "order": {
+    "statusTimeline": "Estado del pedido",
+    "paid": "Pagado",
+    "shipped": "Enviado",
+    "delivered": "Entregado",
+    "confirmDelivery": "Confirmar entrega",
+    "leaveReview": "Dejar reseña",
+    "markShipped": "Marcar como enviado",
+    "details": "Detalles del pedido",
+    "quantity": "Cantidad",
+    "total": "Total",
+    "created": "Creado el",
+    "status": "Estado"
+  },
+  "messages": {
+    "title": "Mensajes",
+    "typeMessage": "Escribe un mensaje...",
+    "send": "Enviar",
+    "noConversations": "Sin conversaciones.",
+    "selectConversation": "Selecciona una conversación"
+  },
+  "review": {
+    "title": "Dejar una reseña",
+    "rating": "Valoración",
+    "comment": "Comentario (opcional)",
+    "submit": "Enviar reseña",
+    "success": "¡Reseña enviada!"
+  },
+  "sample": {
+    "requestTitle": "Solicitar muestra",
+    "price": "Precio de muestra",
+    "confirm": "Confirmar solicitud",
+    "success": "¡Muestra solicitada!"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal.",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Volver",
+    "kg": "kg",
+    "usd": "USD",
+    "verified": "Verificado",
+    "all": "Todos"
+  },
+  "materials": {
+    "WOOL": "Lana",
+    "COTTON": "Algodón",
+    "LINEN": "Lino",
+    "SILK": "Seda",
+    "LEATHER": "Cuero",
+    "CASHMERE": "Cachemira",
+    "ALPACA": "Alpaca",
+    "OTHER": "Otro"
+  }
+}

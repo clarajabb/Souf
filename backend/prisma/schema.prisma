@@ -1,0 +1,174 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  SUPPLIER
+  BUYER
+}
+
+enum FarmingPractice {
+  ORGANIC
+  CONVENTIONAL
+  FREE_RANGE
+}
+
+enum MaterialType {
+  WOOL
+  COTTON
+  LINEN
+  SILK
+  LEATHER
+  CASHMERE
+  ALPACA
+  OTHER
+}
+
+enum ListingStatus {
+  ACTIVE
+  SOLD_OUT
+  PAUSED
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  SHIPPED
+  DELIVERED
+  DISPUTED
+  CANCELLED
+}
+
+enum SampleStatus {
+  PENDING
+  ACCEPTED
+  SHIPPED
+  RECEIVED
+}
+
+model User {
+  id         String   @id @default(cuid())
+  email      String   @unique
+  password   String
+  name       String
+  role       Role
+  language   String   @default("en")
+  country    String?
+  phone      String?
+  avatarUrl  String?
+  isVerified Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  supplierProfile  SupplierProfile?
+  listings         Listing[]
+  buyerOrders      Order[]         @relation("BuyerOrders")
+  supplierOrders   Order[]         @relation("SupplierOrders")
+  buyerSamples     SampleRequest[] @relation("BuyerSamples")
+  sentMessages     Message[]       @relation("SentMessages")
+  receivedMessages Message[]       @relation("ReceivedMessages")
+  writtenReviews   Review[]        @relation("WrittenReviews")
+  receivedReviews  Review[]        @relation("ReceivedReviews")
+}
+
+model SupplierProfile {
+  id              String          @id @default(cuid())
+  userId          String          @unique
+  user            User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  farmName        String
+  description     String
+  location        String
+  region          String?
+  lat             Float?
+  lng             Float?
+  farmingPractice FarmingPractice @default(CONVENTIONAL)
+  certifications  String[]
+  totalSales      Int             @default(0)
+  rating          Float           @default(0)
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+}
+
+model Listing {
+  id             String        @id @default(cuid())
+  supplierId     String
+  supplier       User          @relation(fields: [supplierId], references: [id], onDelete: Cascade)
+  title          String
+  materialType   MaterialType
+  description    String
+  pricePerKg     Float
+  minimumOrderKg Float
+  availableKg    Float
+  images         String[]
+  status         ListingStatus @default(ACTIVE)
+  allowSamples   Boolean       @default(false)
+  samplePriceUsd Float?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  orders         Order[]
+  sampleRequests SampleRequest[]
+}
+
+model Order {
+  id                    String      @id @default(cuid())
+  listingId             String
+  listing               Listing     @relation(fields: [listingId], references: [id])
+  buyerId               String
+  buyer                 User        @relation("BuyerOrders", fields: [buyerId], references: [id])
+  supplierId            String
+  supplier              User        @relation("SupplierOrders", fields: [supplierId], references: [id])
+  quantityKg            Float
+  totalPriceUsd         Float
+  status                OrderStatus @default(PENDING)
+  stripePaymentIntentId String?
+  createdAt             DateTime    @default(now())
+  updatedAt             DateTime    @updatedAt
+
+  messages Message[]
+  reviews  Review[]
+}
+
+model SampleRequest {
+  id         String       @id @default(cuid())
+  listingId  String
+  listing    Listing      @relation(fields: [listingId], references: [id])
+  buyerId    String
+  buyer      User         @relation("BuyerSamples", fields: [buyerId], references: [id])
+  supplierId String
+  status     SampleStatus @default(PENDING)
+  paidAt     DateTime?
+  createdAt  DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt
+}
+
+model Message {
+  id         String   @id @default(cuid())
+  senderId   String
+  sender     User     @relation("SentMessages", fields: [senderId], references: [id])
+  receiverId String
+  receiver   User     @relation("ReceivedMessages", fields: [receiverId], references: [id])
+  orderId    String?
+  order      Order?   @relation(fields: [orderId], references: [id])
+  content    String
+  isRead     Boolean  @default(false)
+  createdAt  DateTime @default(now())
+}
+
+model Review {
+  id           String   @id @default(cuid())
+  orderId      String
+  order        Order    @relation(fields: [orderId], references: [id])
+  reviewerId   String
+  reviewer     User     @relation("WrittenReviews", fields: [reviewerId], references: [id])
+  targetUserId String
+  targetUser   User     @relation("ReceivedReviews", fields: [targetUserId], references: [id])
+  rating       Int
+  comment      String?
+  createdAt    DateTime @default(now())
+}
