@@ -245,7 +245,7 @@ router.post(
         return;
       }
 
-      const newImages = files.map((f) => `/uploads/${f.filename}`);
+      const newImages = files.map((f) => (f as any).path ?? `/uploads/${f.filename}`);
       const allImages = [...listing.images, ...newImages].slice(0, 5);
 
       const updated = await prisma.listing.update({
