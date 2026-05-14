@@ -56,7 +56,6 @@ export default function Listings() {
             <div className="text-center py-16 text-red-500">{t('common.error')}</div>
           ) : listings.length === 0 ? (
             <div className="text-center py-16">
-              <div className="text-5xl mb-4">🔍</div>
               <p className="text-gray-500">{t('listings.noResults')}</p>
             </div>
           ) : (

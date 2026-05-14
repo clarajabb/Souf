@@ -14,9 +14,9 @@ interface SupplierData extends User {
 }
 
 const PRACTICE_LABELS: Record<string, string> = {
-  ORGANIC: '🌿 Organic',
-  CONVENTIONAL: '🌾 Conventional',
-  FREE_RANGE: '🐑 Free-range',
+  ORGANIC: 'Organic',
+  CONVENTIONAL: 'Conventional',
+  FREE_RANGE: 'Free-range',
 };
 
 export default function SupplierProfile() {
@@ -74,8 +74,8 @@ export default function SupplierProfile() {
             <p className="text-gray-500 text-sm mb-1">{supplier.name}</p>
 
             <div className="flex items-center gap-4 flex-wrap text-sm text-gray-500 mb-3">
-              {supplier.country && <span>📍 {profile?.location ?? supplier.country}</span>}
-              <span>🗓 Member since {new Date(supplier.createdAt).getFullYear()}</span>
+              {supplier.country && <span>{profile?.location ?? supplier.country}</span>}
+              <span>Member since {new Date(supplier.createdAt).getFullYear()}</span>
               {profile && (
                 <span>{PRACTICE_LABELS[profile.farmingPractice]}</span>
               )}

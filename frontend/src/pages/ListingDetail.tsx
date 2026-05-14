@@ -230,7 +230,7 @@ export default function ListingDetail() {
                       onClick={() => setShowSampleModal(true)}
                       className="btn-secondary w-full"
                     >
-                      🧪 {t('listing.requestSample')}
+                      {t('listing.requestSample')}
                       {listing.samplePriceUsd && ` — $${listing.samplePriceUsd}`}
                     </button>
                   )}

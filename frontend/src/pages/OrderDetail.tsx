@@ -197,7 +197,7 @@ export default function OrderDetail() {
       <div className="flex flex-wrap gap-3 mb-5">
         {isBuyer && order.status === 'SHIPPED' && (
           <button onClick={handleConfirmDelivery} className="btn-primary">
-            ✅ {t('order.confirmDelivery')}
+            {t('order.confirmDelivery')}
           </button>
         )}
         {order.buyer && (
@@ -205,7 +205,7 @@ export default function OrderDetail() {
             to={`/messages/${isBuyer ? order.supplierId : order.buyerId}`}
             className="btn-secondary"
           >
-            💬 Message {isBuyer ? order.supplier?.name : order.buyer?.name}
+            Message {isBuyer ? order.supplier?.name : order.buyer?.name}
           </Link>
         )}
       </div>

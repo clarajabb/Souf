@@ -43,18 +43,17 @@ export default function BuyerDashboard() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold text-gray-900">{t('dashboard.buyer.title')}</h1>
-        <Link to="/messages" className="btn-secondary text-sm">💬 {t('nav.messages')}</Link>
+        <Link to="/messages" className="btn-secondary text-sm">{t('nav.messages')}</Link>
       </div>
 
       {/* Stats */}
       <div className="grid grid-cols-3 gap-4 mb-8">
         {[
-          { label: 'Total orders', value: orders.length, icon: '📦' },
-          { label: 'Active', value: activeOrders, icon: '🔄' },
-          { label: 'Sample requests', value: samples.length, icon: '🧪' },
+          { label: 'Total orders', value: orders.length },
+          { label: 'Active', value: activeOrders },
+          { label: 'Sample requests', value: samples.length },
         ].map((s) => (
           <div key={s.label} className="card p-4 text-center">
-            <div className="text-2xl mb-1">{s.icon}</div>
             <div className="text-xl font-bold text-gray-900">{s.value}</div>
             <div className="text-xs text-gray-500">{s.label}</div>
           </div>
@@ -88,7 +87,6 @@ export default function BuyerDashboard() {
         <div className="space-y-4">
           {orders.length === 0 ? (
             <div className="text-center py-12 text-gray-400">
-              <div className="text-4xl mb-3">🛒</div>
               <p>No orders yet.</p>
               <Link to="/listings" className="btn-primary text-sm mt-4 inline-block">
                 Browse materials
@@ -130,7 +128,6 @@ export default function BuyerDashboard() {
         <div className="space-y-3">
           {samples.length === 0 ? (
             <div className="text-center py-12 text-gray-400">
-              <div className="text-4xl mb-3">🧪</div>
               <p>No sample requests sent yet.</p>
               <Link to="/listings" className="btn-primary text-sm mt-4 inline-block">
                 Browse materials

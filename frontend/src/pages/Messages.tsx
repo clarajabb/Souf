@@ -44,7 +44,6 @@ export default function Messages() {
             <div className="flex-1 overflow-y-auto">
               {conversations.length === 0 ? (
                 <div className="p-6 text-center text-gray-400 text-sm">
-                  <div className="text-4xl mb-3">💬</div>
                   {t('messages.noConversations')}
                 </div>
               ) : (
@@ -111,7 +110,6 @@ export default function Messages() {
             ) : (
               <div className="flex-1 flex items-center justify-center text-gray-400">
                 <div className="text-center">
-                  <div className="text-5xl mb-4">💬</div>
                   <p className="text-sm">{t('messages.selectConversation')}</p>
                 </div>
               </div>

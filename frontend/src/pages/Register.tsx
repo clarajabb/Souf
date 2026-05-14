@@ -71,7 +71,7 @@ export default function Register() {
                     : 'bg-white text-gray-600 border-gray-300 hover:border-brand-300'
                 }`}
               >
-                {r === 'BUYER' ? `🏷 ${t('auth.buyer')}` : `🌾 ${t('auth.supplier')}`}
+                {r === 'BUYER' ? t('auth.buyer') : t('auth.supplier')}
               </button>
             ))}
           </div>

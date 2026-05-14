@@ -180,19 +180,18 @@ export default function SupplierDashboard() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold text-gray-900">{t('dashboard.supplier.title')}</h1>
-        <Link to="/messages" className="btn-secondary text-sm">💬 {t('nav.messages')}</Link>
+        <Link to="/messages" className="btn-secondary text-sm">{t('nav.messages')}</Link>
       </div>
 
       {/* Earnings */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
         {[
-          { label: t('dashboard.supplier.totalPaid'), value: `$${totalEarnings.toFixed(0)}`, icon: '💰' },
-          { label: t('dashboard.supplier.pending'), value: `$${pendingEarnings.toFixed(0)}`, icon: '⏳' },
-          { label: 'Active listings', value: listings.filter((l) => l.status === 'ACTIVE').length, icon: '📋' },
-          { label: 'Total orders', value: orders.length, icon: '📦' },
+          { label: t('dashboard.supplier.totalPaid'), value: `$${totalEarnings.toFixed(0)}` },
+          { label: t('dashboard.supplier.pending'), value: `$${pendingEarnings.toFixed(0)}` },
+          { label: 'Active listings', value: listings.filter((l) => l.status === 'ACTIVE').length },
+          { label: 'Total orders', value: orders.length },
         ].map((s) => (
           <div key={s.label} className="card p-4">
-            <div className="text-2xl mb-1">{s.icon}</div>
             <div className="text-xl font-bold text-gray-900">{s.value}</div>
             <div className="text-xs text-gray-500">{s.label}</div>
           </div>
@@ -239,7 +238,6 @@ export default function SupplierDashboard() {
 
           {listings.length === 0 ? (
             <div className="text-center py-12 text-gray-400">
-              <div className="text-4xl mb-3">📋</div>
               <p>No listings yet. Create your first listing!</p>
             </div>
           ) : (
@@ -285,7 +283,6 @@ export default function SupplierDashboard() {
         <div className="space-y-3">
           {orders.length === 0 ? (
             <div className="text-center py-12 text-gray-400">
-              <div className="text-4xl mb-3">📦</div>
               <p>No orders yet.</p>
             </div>
           ) : (
@@ -322,7 +319,6 @@ export default function SupplierDashboard() {
         <div className="space-y-3">
           {samples.length === 0 ? (
             <div className="text-center py-12 text-gray-400">
-              <div className="text-4xl mb-3">🧪</div>
               <p>No sample requests yet.</p>
             </div>
           ) : (

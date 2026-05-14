@@ -12,14 +12,6 @@ const STEP_LABELS: Record<string, string> = {
   CANCELLED: 'Cancelled',
 };
 
-const STEP_ICONS: Record<string, string> = {
-  PENDING: '⏳',
-  PAID: '💳',
-  SHIPPED: '📦',
-  DELIVERED: '✅',
-  DISPUTED: '⚠️',
-  CANCELLED: '❌',
-};
 
 interface Props {
   status: OrderStatus;
@@ -34,7 +26,6 @@ export default function OrderStatusTimeline({ status }: Props) {
       <div className={`flex items-center gap-2 px-4 py-3 rounded-lg font-medium text-sm ${
         status === 'DISPUTED' ? 'bg-orange-50 text-orange-700' : 'bg-red-50 text-red-700'
       }`}>
-        <span className="text-lg">{STEP_ICONS[status]}</span>
         <span>{STEP_LABELS[status]}</span>
       </div>
     );

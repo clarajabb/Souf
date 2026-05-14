@@ -13,9 +13,9 @@ interface Props {
 }
 
 const PRACTICE_LABELS: Record<string, string> = {
-  ORGANIC: '🌿 Organic',
-  CONVENTIONAL: '🌾 Conventional',
-  FREE_RANGE: '🐑 Free-range',
+  ORGANIC: 'Organic',
+  CONVENTIONAL: 'Conventional',
+  FREE_RANGE: 'Free-range',
 };
 
 export default function SourceCard({ supplier }: Props) {
@@ -29,7 +29,7 @@ export default function SourceCard({ supplier }: Props) {
   return (
     <div className="card p-6 space-y-4">
       <h2 className="text-base font-semibold text-gray-900 flex items-center gap-2">
-        <span>📍</span> {t('source.title')}
+        {t('source.title')}
       </h2>
 
       {/* Supplier header */}
@@ -48,7 +48,7 @@ export default function SourceCard({ supplier }: Props) {
           </div>
           <p className="text-sm text-gray-500">{supplier.name}</p>
           <p className="text-sm text-gray-500">
-            📍 {profile.location}
+            {profile.location}
             {profile.region && `, ${profile.region}`}
             {supplier.country && ` · ${supplier.country}`}
           </p>
