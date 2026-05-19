@@ -49,7 +49,7 @@ export default function Register() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <Link to="/" className="inline-block mb-3">
-            <img src="/logo.png" alt="SOUF" className="h-16 w-auto mx-auto" />
+            <img src="/logo.png" alt="SOUF" className="h-24 w-auto mx-auto" />
           </Link>
           <p className="text-gray-500 text-sm">{t('auth.registerTitle')}</p>
         </div>

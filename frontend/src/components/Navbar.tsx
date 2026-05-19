@@ -11,13 +11,12 @@ const LANGS = [
 ];
 
 function SoufWordmark({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
-  const heights = { sm: 'h-7', md: 'h-9', lg: 'h-11' };
+  const heights = { sm: 'h-9', md: 'h-12', lg: 'h-14' };
   return (
     <img
       src="/logo.png"
       alt="SOUF"
-      className={`${heights[size]} w-auto select-none`}
-      style={{ filter: 'brightness(0) invert(1)' }}
+      className={`${heights[size]} w-auto select-none brightness-0 invert`}
     />
   );
 }

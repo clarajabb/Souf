@@ -6,13 +6,12 @@ import { Listing } from '../types';
 import ListingCard from '../components/ListingCard';
 
 function SoufWordmark({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
-  const heights = { sm: 'h-10', md: 'h-16', lg: 'h-20' };
+  const heights = { sm: 'h-14', md: 'h-20', lg: 'h-28' };
   return (
     <img
       src="/logo.png"
       alt="SOUF"
-      className={`${heights[size]} w-auto`}
-      style={{ filter: 'brightness(0) invert(1)' }}
+      className={`${heights[size]} w-auto brightness-0 invert`}
     />
   );
 }
