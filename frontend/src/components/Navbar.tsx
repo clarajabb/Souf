@@ -10,16 +10,15 @@ const LANGS = [
   { code: 'es', label: 'ES' },
 ];
 
-// Reusable SOUF wordmark — always white on the brown navbar
 function SoufWordmark({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
-  const sizes = { sm: 'text-base', md: 'text-xl', lg: 'text-2xl' };
+  const heights = { sm: 'h-7', md: 'h-9', lg: 'h-11' };
   return (
-    <span
-      className={`font-bold text-white uppercase select-none ${sizes[size]}`}
-      style={{ letterSpacing: '0.22em' }}
-    >
-      SOUF
-    </span>
+    <img
+      src="/logo.png"
+      alt="SOUF"
+      className={`${heights[size]} w-auto select-none`}
+      style={{ filter: 'brightness(0) invert(1)' }}
+    />
   );
 }
 

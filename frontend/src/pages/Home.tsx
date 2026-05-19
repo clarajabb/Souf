@@ -5,13 +5,15 @@ import { listingsApi } from '../api/client';
 import { Listing } from '../types';
 import ListingCard from '../components/ListingCard';
 
-function SoufWordmark({ className = '' }: { className?: string }) {
+function SoufWordmark({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
+  const heights = { sm: 'h-10', md: 'h-16', lg: 'h-20' };
   return (
-    <span
-      className={`font-bold text-brand-500 uppercase tracking-[0.22em] ${className}`}
-    >
-      SOUF
-    </span>
+    <img
+      src="/logo.png"
+      alt="SOUF"
+      className={`${heights[size]} w-auto`}
+      style={{ filter: 'brightness(0) invert(1)' }}
+    />
   );
 }
 
@@ -44,7 +46,7 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 sm:pt-32 sm:pb-40">
           {/* Wordmark above hero */}
           <div className="mb-10">
-            <SoufWordmark className="text-3xl sm:text-4xl" />
+            <SoufWordmark size="lg" />
           </div>
 
           <div className="max-w-2xl">
@@ -218,7 +220,7 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto px-8 py-14 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
-            <SoufWordmark className="text-xl mb-3" />
+            <SoufWordmark size="sm" />
             <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
               Ready to source smarter?
             </h2>
